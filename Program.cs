@@ -89,10 +89,30 @@ class Program
         Console.WriteLine("{0} has {1} characters", name1, name1.Length);
         Console.WriteLine("{0} has {1} characters", name2, name2.Length);
 
+        string firstCharacterOfName = name1.Substring(1,1);
+        Console.WriteLine(firstCharacterOfName);
+
+        string middleSectionOfName = name1.Substring(2, 5);
+        Console.WriteLine(middleSectionOfName);
+
+        bool startsWith = name1.StartsWith("\"Pr");
+        bool startsWith2 = name2.StartsWith("\"Pr");
+
+        Console.WriteLine("Does name 1 starts with \"Pr? {0}",startsWith);
+        Console.WriteLine("Does name 2 starts with \"Pr {0}", startsWith2);
+
+        //Numeric Conversions
+        int number1 = 7;
+        double number2 = 5.5;
+
+        double convNumber1 = number1;
+        int convNumber2 = (int)number2;
 
 
+        Console.WriteLine(convNumber1);
+        Console.WriteLine(convNumber2);
 
-
+        //
 
 
     }
