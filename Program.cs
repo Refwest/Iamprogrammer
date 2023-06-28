@@ -5,6 +5,15 @@ namespace Iamprogrammer;
 
 class Program
 {
+    enum DayOfWeekend
+    { 
+    Sunday = 0,
+    Monday = 1,
+    Tuesday = 2,
+    Thursday = 3
+    }
+
+
     //Pierwsze kroki w programowaniu językiem C#
     static void Main(string[] args)
     {
@@ -12,7 +21,7 @@ class Program
         myIntegers = 6;
 
         int myIntegers2;
-        myIntegers2 = 6+6;
+        myIntegers2 = 6 + 6;
         int Sum = myIntegers - myIntegers2;
         double myDouble = 2.5;
         string myString = "I am programmer";
@@ -89,7 +98,7 @@ class Program
         Console.WriteLine("{0} has {1} characters", name1, name1.Length);
         Console.WriteLine("{0} has {1} characters", name2, name2.Length);
 
-        string firstCharacterOfName = name1.Substring(1,1);
+        string firstCharacterOfName = name1.Substring(1, 1);
         Console.WriteLine(firstCharacterOfName);
 
         string middleSectionOfName = name1.Substring(2, 5);
@@ -98,7 +107,7 @@ class Program
         bool startsWith = name1.StartsWith("\"Pr");
         bool startsWith2 = name2.StartsWith("\"Pr");
 
-        Console.WriteLine("Does name 1 starts with \"Pr? {0}",startsWith);
+        Console.WriteLine("Does name 1 starts with \"Pr? {0}", startsWith);
         Console.WriteLine("Does name 2 starts with \"Pr {0}", startsWith2);
 
         //Numeric Conversions
@@ -108,11 +117,19 @@ class Program
         double convNumber1 = number1;
         int convNumber2 = (int)number2;
 
-
         Console.WriteLine(convNumber1);
         Console.WriteLine(convNumber2);
 
-        //
+
+        //Declaring Constants
+        const int myIntConstant = 7;
+
+        Console.WriteLine("\n" + Math.PI);
+
+        DayOfWeekend today = DayOfWeekend.Monday;
+        int NumberOfDay = (int)today;
+        Console.WriteLine(NumberOfDay);
+
 
 
     }
