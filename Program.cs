@@ -130,6 +130,16 @@ class Program
         int NumberOfDay = (int)today;
         Console.WriteLine(NumberOfDay);
 
+        //Console input
+
+        Console.WriteLine("\nHi, what is your name?");
+        string yourName = Console.ReadLine();
+
+        Console.WriteLine("Hi {0}, have a nice day!?", yourName);
+       
+
+
+        
 
 
     }
