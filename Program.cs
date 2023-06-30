@@ -1,8 +1,7 @@
 ﻿//See https://aka.ms/new-console-template for more information
 
-
+using System;
 namespace Iamprogrammer;
-
 class Program
 {
     enum DayOfWeekend
@@ -32,9 +31,9 @@ class Program
 
         Console.WriteLine("The sentence that {0} is {1,-5}.", myString, myTrue);
         Console.WriteLine("My mark for programming is " + myIntegers);
-        Console.WriteLine(myIntegers2);
-        Console.WriteLine(Sum / myDouble);
-        Console.WriteLine(myRemeinOperator);
+        Console.WriteLine("Two of six equals "+myIntegers2);
+        Console.WriteLine("-12:2,5= {0}",Sum / myDouble);
+        Console.WriteLine("the rest of 10:4="+myRemeinOperator);
 
         //Add to variable
         double mySum = 3;
@@ -47,11 +46,15 @@ class Program
 
         int A = 4;
         int B = A++;
-        Console.WriteLine("The value of A is {0} and of the B is {1}.", A, B);
+        Console.WriteLine("The value of A is 4 and of the B is {1}.", A, B);
 
         int C = 4;
         int D = ++C;
-        Console.WriteLine("The value of C is {0} and the of the D is {1}", C, D);
+        Console.WriteLine("The value of C is 4 and the of the D is {1}", C, D);
+
+        int myInt = 3;
+        int myInt2 = myInt++;
+        Console.WriteLine(myInt2);
 
 
         //Bool Data Type
@@ -132,18 +135,20 @@ class Program
 
         //Console input
 
-        Console.WriteLine("\nHi, what is your name?");
-        string yourName = Console.ReadLine();
-
-        Console.WriteLine("Hi {0}, have a nice day!?", yourName);
+        //Console.WriteLine("\nHi, what is your name?");
+        //string yourName = Console.ReadLine();
+        //Console.WriteLine("Hi {0}, have a nice day!?", yourName);
 
         Console.WriteLine("What is your name?");
         string name = Console.ReadLine();
         Console.WriteLine("Hi {0}, tell me the numeber", name);
-        
+
         int value2 = int.Parse(Console.ReadLine());
-        value2 =+ 10;
+        value2 += 10;
         Console.WriteLine("That number + 10 equals {0}", value2);
+
+       //Time for test and excercise - next.cs
+
 
 
        
