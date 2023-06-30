@@ -98,11 +98,11 @@ class Program
         Console.WriteLine("{0} has {1} characters", name1, name1.Length);
         Console.WriteLine("{0} has {1} characters", name2, name2.Length);
 
-        string firstCharacterOfName = name1.Substring(1, 1);
-        Console.WriteLine(firstCharacterOfName);
+        string firstCharName = name1.Substring(1, 1);
+        Console.WriteLine("First letter of Przemek is {0}", firstCharName);
 
         string middleSectionOfName = name1.Substring(2, 5);
-        Console.WriteLine(middleSectionOfName);
+        Console.WriteLine("First letters of Przemek is {0}", middleSectionOfName);
 
         bool startsWith = name1.StartsWith("\"Pr");
         bool startsWith2 = name2.StartsWith("\"Pr");
@@ -117,14 +117,14 @@ class Program
         double convNumber1 = number1;
         int convNumber2 = (int)number2;
 
+        Console.WriteLine("{0} rounded to integer equals {1}", number2, convNumber2);
         Console.WriteLine(convNumber1);
-        Console.WriteLine(convNumber2);
 
 
         //Declaring Constants
         const int myIntConstant = 7;
 
-        Console.WriteLine("\n" + Math.PI);
+        Console.WriteLine("\nPi in math equals " + Math.PI);
 
         DayOfWeekend today = DayOfWeekend.Monday;
         int NumberOfDay = (int)today;
@@ -136,7 +136,18 @@ class Program
         string yourName = Console.ReadLine();
 
         Console.WriteLine("Hi {0}, have a nice day!?", yourName);
+
+        Console.WriteLine("What is your name?");
+        string name = Console.ReadLine();
+        Console.WriteLine("Hi {0}, tell me the numeber", name);
+        
+        int value2 = int.Parse(Console.ReadLine());
+        value2 =+ 10;
+        Console.WriteLine("That number + 10 equals {0}", value2);
+
+
        
+        
 
 
         
