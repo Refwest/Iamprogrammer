@@ -113,6 +113,34 @@ class Program
         Console.WriteLine("Does name 1 starts with \"Pr? {0}", startsWith);
         Console.WriteLine("Does name 2 starts with \"Pr {0}", startsWith2);
 
+
+        string word = "Let's creat bigger wolrd";
+        Console.WriteLine(word);
+
+        int wordlength = word.Length;
+        Console.WriteLine("{0}", word.Length);
+        Console.WriteLine(wordlength);
+
+        word = word.Replace("bigger", "better");
+        Console.WriteLine(word);
+
+        word = word.ToLower();
+        Console.WriteLine(word);
+
+        word = word.ToUpperInvariant();
+        Console.WriteLine(word);
+
+        bool better = word.Contains("BETTER");
+        Console.WriteLine(better);
+
+        string substring = word.Substring(1, 2);
+        Console.WriteLine(substring);
+
+        Console.WriteLine(word.Substring(1, 2));
+        Console.WriteLine(word.EndsWith("BETTER WORLD"));
+        Console.WriteLine(word.CompareTo(word));
+
+
         //Numeric Conversions
         int number1 = 7;
         double number2 = 5.5;
